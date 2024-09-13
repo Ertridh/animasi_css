@@ -15,7 +15,7 @@ html, body {
     position: relative;
     margin-bottom: 5%;
     background-color: red;
-    animation: red-box 3s linear infinite alternate;
+    animation: anim-1 3s linear infinite alternate;
 
 }
 
@@ -24,15 +24,15 @@ html, body {
     height: 100px;
     position: relative;
     background-color: blue;
-    animation: blue-box 5s linear infinite alternate;
+    animation: anim-2 5s linear infinite alternate;
 }
 
-@keyframes red-box {
-    from {border-radius: 50%; left: 0%; right: 92.2%;}
-    to {border-radius: 50%; left: 92.2%; right: 0px;}
+@keyframes anim-1 {
+    from {left: 0%; right: 92.2%;}
+    to {left: 92.2%; right: 0px;}
 }
 
-@keyframes blue-box {
+@keyframes anim-2 {
     0% {background-color: blue; left: 0px; right: 92.2%;}
     25% {background-color: yellow;}
     50% {background-color: green;}
